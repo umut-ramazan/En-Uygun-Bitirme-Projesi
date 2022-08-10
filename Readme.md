@@ -25,4 +25,9 @@ Adminler
  - Nginx
  - Elastich Search 7.4
  - PHP 7.4
+
+# Kurulum
+
+Kurulum talimatları - [ https://google.fr ] Link Burada dır
+
  
