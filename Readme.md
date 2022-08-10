@@ -28,7 +28,7 @@ Adminler
 
 # Kurulum
 
-Kurulum talimatları -[documentation](doc/Readme.md)
+Kurulum talimatları -[documentation](https://github.com/umut-ramazan/docker-en-uygun/tree/main/docs)
 
 
  
