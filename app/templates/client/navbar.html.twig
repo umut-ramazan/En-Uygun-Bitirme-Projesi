@@ -1,0 +1,89 @@
+
+    {% set shoppingCartSummery = app.session.get('shoppingCartSummery') %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="margin-right:1%">Responsive offcanvas navbar</a>
+
+    <button class="navbar-toggler nav-border-right " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end  navbar-brand-center ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{ path('app_client') }}">Ana Sayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ path('app_client') }}">Tüm Ürünler</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Kategoriler
+            </a>
+
+            <ul >
+              {% macro menu_categories(buildCategories) %}
+                {% import _self as macros %}
+
+                {% for category in buildCategories %}
+
+                  {% if category.children  is empty  %}
+                    <a class="dropdown-item" href="{{ path('app_client') }}?k={{ category.categoryName }}">{{ category.categoryName }}</a>
+                  {% endif%}
+
+                  {% if category.children %}
+                    <li class="dropdown-submenu a">
+                      <a href="{{ path('app_client') }}?k={{ category.categoryName }}" class= "dropdown-item  dropdown-toggle dropdown-submenu" role="button" data-bs-toggle="a"> {{ category.categoryName }}</a>
+
+                      <ul class="submenu dropdown-menu" style=" color: white;">
+                        {{ macros.menu_categories(category.children) }}
+                      </ul>
+                    </li>
+                  {% endif %}
+
+                {% endfor %}
+
+              {% endmacro %}
+              <ul class="dropdown-menu">
+                {{ _self.menu_categories(buildCategories) }}
+              </ul>
+
+            </ul>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ path('app_orders') }}">Siparişlerim</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav justify-content-end  flex-grow-1 pe-3 navbar-right">
+          <br>
+          {% if app.user.email is not empty %}
+
+          <li><a class="nav-link" href="#">Email: {{ app.user.email }}</a></li>
+          {% endif %}
+          <li><a class="nav-link" href="{{ path('app_logout') }}">Çıkış Yap</a></li>
+          <li><a href="{{ path('app_shoppingCart') }}" class="nav-link">
+              <span class="glyphicon glyphicon-shopping-cart nav-link cart-icon" aria-hidden="true"></span>
+              <span class="badge cart-count">
+                {% if shoppingCartSummery is not empty  %}
+                  {{ shoppingCartSummery.totalCount }}
+                {% endif %}
+                {% if shoppingCartSummery is  empty %}
+                     0
+                {% endif %}
+              </span>
+            </a>
+
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</nav>
+

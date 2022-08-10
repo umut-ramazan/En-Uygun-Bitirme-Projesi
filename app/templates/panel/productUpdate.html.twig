@@ -1,0 +1,203 @@
+{% extends 'panel/layouts.html.twig' %}
+
+{% block title %}Ürün Güncelleme{% endblock %}
+ {% block javascripts %}
+     <script src="{{ asset('Panel/js/editor/tinymce.min.js') }}" type="text/javascript"></script>
+     <script>
+         tinymce.init({
+             selector: '#my'
+         });
+     </script>
+ {% endblock %}
+{% block body %}
+        <div class="app-content content">
+            <div class="content-wrapper">
+                <div class="content-wrapper-before"></div>
+                <div class="content-header row">
+                    <div class="content-header-left col-md-4 col-12 mb-2">
+                        <h3 class="content-header-title">Ürün Güncelleme</h3>
+                    </div>
+                    <div class="content-header-right col-md-8 col-12">
+                        <div class="breadcrumbs-top float-md-right">
+                            <div class="breadcrumb-wrapper mr-1">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="{{ path('app_panel') }}">Ana sayfa </a>
+                                    </li>
+                                    <li class="breadcrumb-item active">Form Elements
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-body"><!-- Basic Inputs start -->
+                    <section class="basic-inputs">
+                        <form method="post" enctype="multipart/form-data">
+                            <input type="hidden" name="token" value="{{ csrf_token('productUpdateToken') }}"/>
+                        <div class="row match-height">
+                            <div class="col-xl-12 col-lg-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                      <center>  <h3 class="card-title">Ürün  İşlemleri</h3></center>
+                                        {% if message %}
+                                            <center><p>{{ message }}</p></center>
+
+                                        {% endif %}
+
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="card-body">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Ürün Adı</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="card-body">
+                                            <fieldset class="form-group">
+                                                <input type="text" class="form-control" name="productName" value="{{ products.productName }}" required>
+                                            </fieldset>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Ürün Adet</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="card-body">
+                                            <fieldset class="form-group">
+                                                <input type="text" class="form-control" name="productPiece" value="{{ products.productPiece }}" required>
+                                            </fieldset>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Ürün Fiyatı</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="card-body">
+                                            <fieldset class="form-group">
+                                                <input type="text" class="form-control" name="productPrice" value="{{ products.productPrice }}" required>
+                                            </fieldset>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Ürün Açıklama</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="card-body">
+                                            <fieldset class="form-group ">
+                                                <label for="my"></label><textarea name="productContent" id="my"  required>{{ products.productContent|raw }}</textarea>
+
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-6 col-lg-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Resim Ekle</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="card-body">
+                                            <fieldset class="form-group">
+                                                <label for="formFileLg" class="form-label">Png veya Jpg Destekler</label>
+                                                <input class="form-control form-control-lg" id="formFileLg"  type="file" name="productImg" >
+                                                <br>
+                                                <img src="{{ asset('uploads/img/') }}{{ products.imgPath }}" width="40%" alt="">
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Kategori Sil</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="card-body">
+                                            <fieldset class="form-group">
+                                                <label for="formFileLg" class="form-label">Birden Çok Kategori Seçebilirsiniz</label>
+                                               <select class="form-control" multiple="multiple" id="countrySelect" name="parentRemoveCategory[]">
+                                                    {% for category in products.categories %}
+                                                        <option value="{{ category.Id }}">{{ category.categoryName }}</option>
+                                                    {% endfor %}
+
+                                                </select>
+                                                <br>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Kategori Ekle</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="card-body">
+                                            <fieldset class="form-group">
+                                                <label for="formFileLg" class="form-label">Birden Çok Kategori Seçebilirsiniz</label>
+                                                <select class="form-control" multiple="multiple" id="countrySelect" name="parentAddCategory[]" >
+                                                    {% for category in categories %}
+
+                                                        <option value="{{ category.Id }}">{{ category.categoryName }}</option>
+
+                                                    {% endfor %}
+
+                                                </select>
+                                                <br>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                            <center><input type="submit" class="btn btn-primary" value="Ürün Ekle"></center>
+                        </form>
+                    </section>
+                    <br>
+
+
+
+
+                </div>
+            </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+{% endblock %}

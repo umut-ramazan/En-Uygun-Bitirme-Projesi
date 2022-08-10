@@ -1,0 +1,49 @@
+version: '3'
+services:
+  database:
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: "app"
+    volumes:
+      - my-database:/var/lib/mysql
+    ports:
+      - '3306:3306'
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    restart: always
+    ports:
+      - 8082:80
+    environment:
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: 123
+      PMA_HOST: database
+      PMA_USER: root
+      PMA_PASSWORD: 123
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379"
+
+  rabbitmq:
+      image: rabbitmq:3-management
+      container_name: 'rabbitq'
+      ports:
+        - 5672:5672
+        - 15672:15672
+      volumes:
+        - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+        - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+      networks:
+        - rabbitmq_go_net
+
+volumes:
+  my-database:
+networks:
+    rabbitmq_go_net:
+      driver: bridge

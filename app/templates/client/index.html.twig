@@ -1,0 +1,49 @@
+{% extends 'client/layouts.html.twig' %}
+
+{% block title %}{% endblock %}
+{% block stylesheets %}
+
+{% endblock %}
+{% block javascripts %}
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+
+            <h2 class="text-center">{{controller_name}}</h2>
+        <hr>
+
+        <div class="row">
+
+            {% for product in products %}
+                {% if product.productPiece > 0 and product.productPrice > 0 and product.categories.values is not empty %}
+                    <div class="col-sm-6 col-md-3">
+                        <div class="thumbnail">
+                            <img src="{{ asset('uploads/img/') }}{{ product.imgPath }}"  alt="">
+                            <div class="caption">
+                                <p class="text-center "><strong>Ürün Adı: </strong> {{ product.productName }}</p>
+                                <p class="text-center"><strong>Özelikleri  </strong>{{ product.productContent|raw }}</p>
+                                <p class="text-right price-container"><strong>{{ product.productPrice}} TL</strong></p>
+                                <p class="text-center price-container"><strong>{{ product.productPiece}} Adet Kaldı</strong></p>
+                                <p>
+                                    <button productId="{{ product.id }}"  class="btn btn-primary btn-block addToCartBtn" role="button">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span> Sepete Ekle
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+
+            {% if products is empty %}
+                <h2 class="text-center">Kategoride Ürün Yok</h2>
+            {% endif %}
+
+        </div>
+    </div>
+
+{% endblock %}
+

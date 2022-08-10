@@ -1,0 +1,85 @@
+
+@media all and (min-width: 992px) {
+    .dropdown-menu li{ position: relative; 	}
+    .nav-item .submenu{
+        display: none;
+        position: absolute;
+        left:100%; top:-7px;
+    }
+    .nav-item .submenu-left{
+        right:100%; left:auto;
+    }
+    .dropdown-menu > li:hover{ background-color: #f1f1f1 }
+    .dropdown-menu > li:hover > .submenu{ display: block; }
+}
+
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+    .dropdown-menu li{ position: relative; 	}
+    .nav-item .submenu{
+        display: none;
+        position: absolute;
+         top:100%; left:10%;
+    }
+    .nav-item .submenu-left{
+        right:100%; left:auto;
+    }
+    .dropdown-menu > li:hover{ background-color: #f1f1f1 }
+    .dropdown-menu > li:hover > .submenu{ display: block; }
+
+}
+
+
+.navbar .nav-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.dropdown-toggle::after {
+    transition: transform 0.15s linear;
+}
+
+.show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+}
+
+.dropdown-menu {
+    margin-top: 0;
+}
+
+
+
+.cart-icon{
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.cart-count{
+    position: relative;
+    background-color: darkred !important;
+    font-size: 8px;
+    top: -10px;
+    left: -5px;
+}
+
+.color-danger{
+    color: red;
+}
+.item-count-input{
+    width: 50px;
+    text-align: center;
+}
+
+td{
+    vertical-align: middle !important;
+}
+tfoot th{
+    padding: 20px !important;
+    background-color: #dfdfdf !important;
+}
+
+table{
+    box-shadow: 0 0  8px rgb(5,5,5,.3);
+}
+

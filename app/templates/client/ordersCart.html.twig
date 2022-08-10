@@ -1,0 +1,121 @@
+{% extends 'client/layouts.html.twig' %}
+
+{% block title %}Siparişler{% endblock %}
+{% block stylesheets %}
+
+{% endblock %}
+{% block javascripts %}
+
+{% endblock %}
+
+{% block body %}
+    {% set shoppingCarts = app.session.get('shoppingCart') %}
+    {% set shoppingCartSummery = app.session.get('shoppingCartSummery') %}
+
+<div class="container">
+    <div class="row">
+            <h2 class="text-center">Siparişler Listesi</h2>
+        <hr>
+        <div class="col-md-8 col-md-offset-2">
+            <table class="table table-hover table-bordered table-striped">
+                <thead>
+                <th class="text-center">Adres</th>
+                <th class="text-center">Telefon Numarası</th>
+                <th class="text-center">Ödeme Tipi</th>
+                <th class="text-center">Ürün İsimleri ve adetleri</th>
+                <th class="text-center">Toplam Adet</th>
+                <th class="text-center">Toplam Ücreti</th>
+                <th class="text-center">Statüs</th>
+                <th class="text-center">Sipariş Edilen Tarih</th>
+                </thead>
+
+                {% for order in Orders  %}
+
+                <tbody>
+                <tr>
+
+                    <td class="text-center">{{ order.address  }}</td>
+                    <td class="text-center">{{ order.phoneNumber  }}</td>
+                    <td class="text-center">{{ order.orderOption  }}</td>
+                    <td class="text-center">
+                        {% for key,data in order.shoppingCartId.productIds %}
+                            {{ data.0.productName }} =  {{ data.0.count }} Adet <br>
+                        {% endfor %}
+                    </td >
+                    <td class="text-center">{{ order.shoppingCartId.summersIds.totalCount }}</td>
+                    <td class="text-center">{{ order.shoppingCartId.summersIds.totalPrice }} TL</td>
+                    <th class="text-center">{{ order.status }}</th>
+                    <th class="text-center">{{ order.createdAt|date("F jS \\a\\t g:ia") }}</th>
+
+                </tr>
+                {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <h2 class="text-center">Onaylanan Siparişler</h2>
+        <hr>
+        <div class="col-md-8 col-md-offset-2">
+
+            <table class="table table-hover table-bordered table-striped">
+                <thead>
+                <th class="text-center">Adres</th>
+                <th class="text-center">Telefon Numarası</th>
+                <th class="text-center">Ödeme Tipi</th>
+                <th class="text-center">Ürün İsimleri ve adetleri</th>
+                <th class="text-center">Toplam Adet</th>
+                <th class="text-center">Toplam Ücreti</th>
+                <th class="text-center">Statüs</th>
+                <th class="text-center">Sipariş Edilen Tarih</th>
+                </thead>
+
+
+                {% for order in Orders  %}
+
+                {% if order.status != 'process' %}
+
+                <tbody>
+                <tr>
+
+                    <td class="text-center">{{ order.address  }}</td>
+                    <td class="text-center">{{ order.phoneNumber  }}</td>
+                    <td class="text-center">{{ order.orderOption  }}</td>
+                    <td class="text-center">
+                        {% for key,data in order.shoppingCartId.productIds %}
+                            {{ data.0.productName }} =  {{ data.0.count }} Adet <br>
+                        {% endfor %}
+                    </td >
+                    <td class="text-center">{{ order.shoppingCartId.summersIds.totalCount }}</td>
+                    <td class="text-center">{{ order.shoppingCartId.summersIds.totalPrice }} TL</td>
+                    <th class="text-center">{{ order.status }}</th>
+                    <th class="text-center">{{ order.createdAt|date("F jS \\a\\t g:ia") }}</th>
+
+                </tr>
+                {% endif %}
+                {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    {% if Orders is empty%}
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="alert alert-info">
+                    <strong>Sipariş Bulunmamaktadır. <a href="{{ path('app_client') }}"> Alışverişe devam ediniz. </a></strong>
+                </div>
+            </div>
+        </div>
+
+    {% endif %}
+
+</div>
+
+
+{% endblock %}
+

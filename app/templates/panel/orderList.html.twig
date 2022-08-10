@@ -1,0 +1,141 @@
+{% extends 'panel/layouts.html.twig' %}
+
+{% block title %}Ana Sayfa{% endblock %}
+
+{% block body %}
+
+    <div class="app-content content">
+        <div class="content-wrapper">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Siparişler</h4>
+                            <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                            <div class="heading-elements">
+                                <ul class="list-inline mb-0">
+                                    <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                    <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                    <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-content collapse show">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">Adresi</th>
+                                        <th scope="col">Telefon Numarası</th>
+                                        <th scope="col">Ürün İsimleri ve adetleri</th>
+                                        <th scope="col">Aldığı Toplam Adet</th>
+                                        <th scope="col">Toplam Tutar</th>
+                                        <th scope="col">Statüs</th>
+                                        <th scope="col">Alma Tarihi</th>
+                                        <th scope="col">Sipariş Onayla</th>
+                                    </tr>
+
+                                    </thead>
+        
+                                    {% for order in orders %}
+                                        {% if order.status == 'process' %}
+                                            
+
+                                        <tr>
+                                            <td>{{ order.address }}</td>
+                                            <td>{{ order.phoneNumber }}</td>
+                                            <td>
+                                                {% for key,data in order.shoppingCartId.productIds %}
+                                                    {{ data.0.productName }} =  {{ data.0.count }} Adet <br>
+                                                {% endfor %}
+                                            </td>
+
+                                            <td>{{ order.shoppingCartId.summersIds.totalCount }}</td>
+                                            <td>{{ order.shoppingCartId.summersIds.totalPrice }} TL</td>
+                                            <th>{{ order.status }}</th>
+                                            <th>{{ order.createdAt|date("F jS \\a\\t g:ia") }}</th>
+                                            <td>
+                                                <form action="{{ path('app_orderList') }}">
+                                                    <input type="hidden" name="token" value="{{ csrf_token('confirmOrderToken') }}"/>
+                                                    <input type="hidden" name="orderId" value="{{ order.id }}"/>
+                                                    <input type="submit" class="btn btn-info btn-min-width mr-1 mb-1" value="Siparişi Onayla">
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        {% endif %}
+                                    {% endfor %}
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Onaylanan Siparişler</h4>
+                            <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                            <div class="heading-elements">
+                                <ul class="list-inline mb-0">
+                                    <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                    <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                    <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-content collapse show">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">Adresi</th>
+                                        <th scope="col">Telefon Numarası</th>
+                                        <th scope="col">Ürün İsimleri ve adetleri</th>
+                                        <th scope="col">Aldığı Toplam Adet</th>
+                                        <th scope="col">Toplam Tutar</th>
+                                        <th scope="col">Statüs</th>
+                                        <th scope="col">Alma Tarihi</th>
+
+                                    </tr>
+
+                                    </thead>
+
+                                    {% for order in orders %}
+                                        {% if order.status == 'confirm' %}
+
+
+                                            <tr>
+                                                <td>{{ order.address }}</td>
+                                                <td>{{ order.phoneNumber }}</td>
+                                                <td>
+                                                    {% for key,data in order.shoppingCartId.productIds %}
+                                                        {{ data.0.productName }} =  {{ data.0.count }} Adet <br>
+                                                    {% endfor %}
+                                                </td>
+
+                                                <td>{{ order.shoppingCartId.summersIds.totalCount }}</td>
+                                                <td>{{ order.shoppingCartId.summersIds.totalPrice }} TL</td>
+                                                <th>{{ order.status }}</th>
+                                                <th>{{ order.createdAt|date("F jS \\a\\t g:ia") }}</th>
+
+                                            </tr>
+                                        {% endif %}
+                                    {% endfor %}
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

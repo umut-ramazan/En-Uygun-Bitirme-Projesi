@@ -1,0 +1,153 @@
+{% extends 'panel/layouts.html.twig' %}
+
+{% block title %}Ürünler{% endblock %}
+{% block body %}
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Yayında Olan Ürünler</h4>
+                            <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                            <div class="heading-elements">
+                                <ul class="list-inline mb-0">
+                                    <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                    <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                    <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-content collapse show">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">Ürün Adı</th>
+                                        <th scope="col">Ürün Açıklama</th>
+                                        <th scope="col">Ürün Fiyatı</th>
+                                        <th scope="col">Ürün Adeti</th>
+                                        <th scope="col">Ürünün Kategorileri</th>
+                                        <th scope="col">Ürün Fotoğrafı</th>
+                                        <th scope="col">Oluşturulma Tarihi</th>
+                                        <th scope="col">Güncellenme Tarihi</th>
+                                        <th scope="col">Düzenle</th>
+                                        <th scope="col">Sil</th>
+                                    </tr>
+                                    </thead>
+                                    {% for  key,product in products %}
+
+                                        {% if product.categories.values and product.productPiece > 0 and product.productPrice > 0  %}
+                                            <tbody>
+                                            <tr>
+                                                <th >{{ product.productName }}</th>
+                                                <td>{{ product.productContent|raw }}</td>
+                                                <td>{{ product.productPrice }}</td>
+                                                <td>{{ product.productPiece }}</td>
+                                                <td>
+                                                    {% for key,category in product.categories %}
+                                                        {{ category.categoryName}} <br>
+                                                    {% endfor %}
+                                                </td>
+                                                <td>  <img src="{{ asset('uploads/img/') }}{{ product.imgPath }}" width="50%" alt=""></td>
+                                                <td>{{ product.createdAt|date("F jS \\a\\t g:ia")}}</td>
+                                                <td>{{ product.updatedAt|date("F jS \\a\\t g:ia")}}</td>
+                                                <td><a href="product/update/{{ product.id }}"><button type="button" class="btn btn-info btn-min-width mr-1 mb-1">Düzenle</button></a></td>
+                                                <td>
+                                                    <form action="{{ path('app_productRemove') }}" method="POST">
+                                                        <input type="hidden" name="token" value="{{ csrf_token('productRemoveToken') }}"/>
+                                                        <input type="hidden" name="id" value="{{ product.id }}">
+                                                        <input type="submit" class="btn btn-danger btn-min-width mr-1 mb-1" value="Sil" name="remove">
+
+                                                    </form></td>
+                                            </tr>
+
+                                            </tbody>
+                                        {% endif %}
+                                    {% endfor %}
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Stoğu Veya Kategorisi Olmayan Ürünler</h4>
+                            <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                            <div class="heading-elements">
+                                <ul class="list-inline mb-0">
+                                    <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                    <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                    <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-content collapse show">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">Ürün Adı</th>
+                                        <th scope="col">Ürün Açıklama</th>
+                                        <th scope="col">Ürün Fiyatı</th>
+                                        <th scope="col">Ürün Adeti</th>
+                                        <th scope="col">Ürünün Kategorileri</th>
+                                        <th scope="col">Ürün Fotoğrafı</th>
+                                        <th scope="col">Oluşturulma Tarihi</th>
+                                        <th scope="col">Güncellenme Tarihi</th>
+                                        <th scope="col">Düzenle</th>
+                                        <th scope="col">Sil</th>
+                                    </tr>
+                                    </thead>
+
+                                    {% for  key,product in products %}
+                                        {% if product.categories.values is empty or product.productPiece == 0 or product.productPrice == 0 %}
+                                            <tbody>
+                                            <tr>
+                                                <th >{{ product.productName }}</th>
+                                                <td>{{ product.productContent|raw }}</td>
+                                                <td>{{ product.productPrice }}</td>
+                                                <td>{{ product.productPiece }}</td>
+                                                <td>
+                                                    {% for key,category in product.categories %}
+                                                        {{ category.categoryName}} <br>
+                                                    {% endfor %}
+                                                </td>
+                                                <td>  <img src="{{ asset('uploads/img/') }}{{ product.imgPath }}" width="50%" alt=""></td>
+                                                <td>{{ product.createdAt|date("F jS \\a\\t g:ia")}}</td>
+                                                <td>{{ product.updatedAt|date("F jS \\a\\t g:ia")}}</td>
+                                                <td><a href="product/update/{{ product.id }}"><button type="button" class="btn btn-info btn-min-width mr-1 mb-1">Düzenle</button></a></td>
+                                                <td>
+                                                    <form action="{{ path('app_productRemove') }}" method="POST">
+                                                        <input type="hidden" name="token" value="{{ csrf_token('productRemoveToken') }}"/>
+                                                        <input type="hidden" name="id" value="{{ product.id }}">
+                                                        <input type="submit" class="btn btn-danger btn-min-width mr-1 mb-1" value="Sil" name="remove">
+
+                                                    </form></td>
+                                            </tr>
+
+                                            </tbody>
+                                        {% endif %}
+                                    {% endfor %}
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+{% endblock %}

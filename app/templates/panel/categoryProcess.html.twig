@@ -1,0 +1,189 @@
+{% extends 'panel/layouts.html.twig' %}
+
+{% block title %}Kategori Ekleme{% endblock %}
+
+{% block body %}
+        <div class="app-content content">
+            <div class="content-wrapper">
+                <div class="content-wrapper-before"></div>
+                <div class="content-header row">
+                    <div class="content-header-left col-md-4 col-12 mb-2">
+                        <h3 class="content-header-title">Kategori Ekleme</h3>
+                    </div>
+                    <div class="content-header-right col-md-8 col-12">
+                        <div class="breadcrumbs-top float-md-right">
+                            <div class="breadcrumb-wrapper mr-1">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="{{ path('app_panel') }}">Ana sayfa </a>
+                                    </li>
+                                    <li class="breadcrumb-item active">Form Elements
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-body"><!-- Basic Inputs start -->
+                    <section class="basic-inputs">
+                        <form action="{{ path('app_categoryAdd') }}" method="POST">
+                            <input type="hidden" name="token" value="{{ csrf_token('categoryAddToken') }}"/>
+                        <div class="row match-height">
+                            <div class="col-xl-12 col-lg-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                      <center>  <h3 class="card-title">Kategori / Alt Kategori İşlemleri</h3></center>
+                                        {% if message %}
+                                            <center><p>{{ message }}</p></center>
+                                        {% endif %}
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="card-body">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Kategori Adı</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="card-body">
+                                            <fieldset class="form-group">
+                                                <input type="text" class="form-control" name="categoryName">
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-xl-6 col-lg-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Varsa Üst Kategori</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="card-body">
+                                            <fieldset class="form-group">
+                                               <select class="form-control" id="basicSelect" name="parentCategory">
+                                                    <option value="0">Yok</option>
+                                                    {% for category in categories %}
+                                                        <option value="{{ category.Id }}">{{ category.categoryName }}</option>
+                                                    {% endfor %}
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                            <center><input type="submit" class="btn btn-primary" value="Kategori Ekle"></center>
+                        </form>
+                    </section>
+                    <br>
+
+
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Ana Kategoriler</h4>
+                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                    <ul class="list-inline mb-0">
+                                        <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                        <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                        <li><a data-action="close"><i class="ft-x"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-content collapse show">
+
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">Id</th>
+                                            <th scope="col">Kategori Adı</th>
+                                            <th scope="col">Ürün Sayısı</th>
+                                            <th scope="col">Sil</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for category in categories %}
+                                            <tr>
+                                                <th scope="row">{{ category.Id }}</th>
+                                                <td>{{ category.categoryName }}</td>
+                                                <td>
+                                                    <form action="{{ path('app_categoryRemove') }}" method="POST">
+                                                        <input type="hidden" name="token" value="{{ csrf_token('categoryRemoveToken') }}"/>
+                                                        <input type="hidden" name="id" value="{{ category.id }}">
+                                                        <input type="submit" class="btn btn-danger btn-min-width mr-1 mb-1" value="Kategori Sil" name="remove">
+
+                                                    </form></td>
+                                            </tr>
+                                        {% endfor %}
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title text-center">Kategori Hiyerarşi </h3>
+                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                    <ul class="list-inline mb-0">
+                                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-body">
+
+                                </div>
+                                <div class="table-responsive">
+
+                                        {% macro menu_categories(buildCategories) %}
+                                            {% import _self as macros %}
+                                            {% for category in buildCategories %}
+                                                <li>
+                                               {{ category.categoryName }}
+                                                    {% if category.children %}
+                                                        <ul class="children">
+                                                            {{ macros.menu_categories(category.children) }}
+                                                        </ul>
+                                                    {% endif %}
+                                                </li>
+                                            {% endfor %}
+                                        {% endmacro %}
+
+                                        <ul class="menu-category">
+                                            {{ _self.menu_categories(buildCategories) }}
+                                        </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+{% endblock %}

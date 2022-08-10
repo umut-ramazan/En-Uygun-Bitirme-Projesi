@@ -1,0 +1,146 @@
+{% extends 'client/layouts.html.twig' %}
+
+{% block title %}{% endblock %}
+{% block stylesheets %}
+
+{% endblock %}
+{% block javascripts %}
+    <script>
+        function information(id) {
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
+{% endblock %}
+
+{% block body %}
+    {% set shoppingCarts = app.session.get('shoppingCart') %}
+    {% set shoppingCartSummery = app.session.get('shoppingCartSummery') %}
+
+    {% if shoppingCarts  and shoppingCartSummery %}
+        <div class="container">
+            <h2 class="text-center">Sepetinizde <strong class="color-danger">{{ shoppingCartSummery.totalCount }}</strong> adet ürün bulunmaktadır.</h2>
+            <h3 class="text-center">2. Ürüne %50 İndirim vardır <strong class="color-danger">İndirimler siparişten sonra sisteme geçer !</strong></h3>
+            <h3 class="text-center">Seçili Kategorilerde 3 Al 1 Öde Kampanyası vardır. <strong class="color-danger">İndirimler siparişten sonra sisteme geçer !</strong></h3>
+        </div>
+
+        <hr>
+
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-md-8 col-md-offset-2">
+                    <table class="table table-hover table-bordered table-striped">
+                        <thead>
+                            <th class="text-center">Ürün Resmi</th>
+                            <th class="text-center">Ürün Adı</th>
+                            <th class="text-center">Fiyatı</th>
+                            <th class="text-center">Adeti</th>
+                            <th class="text-center">Toplam</th>
+                            <th class="text-center">Sepetten Çıkar</th>
+                    </thead>
+
+        {% for key,shoppingCart in shoppingCarts  %}
+
+                        <tbody>
+                            <tr>
+                                <td class="text-center"><img src="{{ asset('uploads/img/') }}{{ shoppingCart.0.imgPath }}"  width="120px"> </td>
+                                <td class="text-center">{{ shoppingCart.0.productName }}</td>
+                                <td class="text-center">{{ shoppingCart.0.productPrice }} TL</td>
+                                <td class="text-center">
+
+                                    <a href="shopping/process?p=incCount&productId={{ shoppingCart.0.id }}" class="btn btn-xs btn-success">
+                                        <span class="glyphicon glyphicon-plus"></span>
+                                    </a>
+
+                                    <input type="text" value="{{ shoppingCart.0.count }}" class="item-count-input">
+
+                                    <a href="shopping/process?p=decCount&productId={{ shoppingCart.0.id }}" class="btn btn-xs btn-danger">
+                                        <span class="glyphicon glyphicon-minus"></span>
+                                    </a>
+                                </td>
+
+                                <td class="text-center">{{ shoppingCart.0.total }} TL</td>
+                                <td class="text-center"> <a href="shopping/process?p=removeFromCart&productId={{ shoppingCart.0.id }}" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span> Sepeten Çıkar</a></td>
+
+                            </tr>
+        {% endfor %}
+
+                        </tbody>
+
+                            <tfoot>
+                                <th colspan="2" class="text-right">Toplam Ürün : <span class="color-danger">{{ shoppingCartSummery.totalCount }} Adet</span></th>
+                                <th colspan="2" class="text-center"><p  onclick="information('information');"  class="btn btn-danger btn-sm"> <span class="glyphicon glyphicon-credit-card"></span> Sipariş Ver </p></th>
+                                <th colspan="4" class="text-right">Toplam Tutar : <span class="color-danger">{{ shoppingCartSummery.totalPrice }} TL</span></th>
+                            </tfoot>
+
+                    </table>
+
+    {% endif %}
+
+
+    {% if shoppingCartSummery is empty or shoppingCartSummery.totalCount <= 0%}
+      <div class="container">
+          <br>
+          <div class="row">
+              <div class="alert alert-info">
+                  <strong>Sepetinizde Henüz bir ürün bulunmamaktadır.<a href="{{ path('app_client') }}"> Eklemek için tıklayınız</a></strong>
+              </div>
+          </div>
+      </div>
+
+    {% endif %}
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    <section class="main my-5" style="display: none;" id="information">
+        <div class="container">
+            <h2 class="text-center text-secondary text-uppercase mb-3"><b>Sipariş Bilgileri</b></h2>
+            <div class="col-lg-3"></div>
+            <form action="{{ path('app_shoppingprocess') }}" method="post" class="needs-validation border rounded px-4 py-5 col-12 col-md-8 col-lg-6 align-center mx-auto shadow-sm" style="background-color:#f5f5f5;" >
+                <input type="hidden" name="token" value="{{ csrf_token('orderAddToken') }}"/>
+                <div class="form-row">
+
+                    <div class="col-12 mb-3">
+                        <textarea style="height:50px;" type="text" class="form-control " minlength="10" id="address" name="address"  rows="15" placeholder="Adress" required></textarea>
+                        <div class="invalid-feedback">
+                            Adresinizi Girin.
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-3">
+
+                        <input style="height:50px;" type="text" class="form-control" id="phone" name="phone" minlength="10" maxlength="10" placeholder="Telefon Numarası" required>
+                        <div class="invalid-feedback">
+                            Telefon Numarası
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <select style="height:50px;"  name="orderOption" class="form-control" required>
+                            <option value="paymentByDoor">Kapıda Ödeme</option>
+                            <option value="crediCart">Kredi Kartı</option>
+                            <option value="iban">İban</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please provide valid Gender.
+                        </div>
+                    </div>
+
+
+                </div>
+                <input style="height:50px; font-size:18px;" class="btn btn-primary col-12" type="submit" value="Sipariş Ver">
+
+            </form>
+        </div>
+    </section>
+
+
+{% endblock %}
+
