@@ -3,7 +3,7 @@
 
  * Dosyayı Git Hubtan Çekiyoruz
     ```
-    git clone https://github.com/umut-ramazan/docker-en-uygun.git  
+    git clone https://github.com/umut-ramazan/En-Uygun-Bitirme-Projesi
     ```
   
 
@@ -51,10 +51,5 @@
       - Kibana adres :  http://localhost:5601/app/kibana
   
  
-
-# Proje tanıtımı
-
-Kullanımı   [documentation](use.md)
-
 
  
