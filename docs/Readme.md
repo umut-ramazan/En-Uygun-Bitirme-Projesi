@@ -1,34 +1,55 @@
-# Proje Amacı
-  Kullanıcıların ürün satın alabildiği E ticaret Sitesi. 2 yetki olucak "ROLE_USER" ve "ROLE_ADMIN" .
+# Proje Kurulumu 
+
+
+ * Dosyayı Git Hubtan Çekiyoruz
+    ```
+    git clone https://github.com/umut-ramazan/docker-en-uygun.git  
+    ```
   
-Adminler
 
- - Ürün ekleme , düzenleme ve silme
- - Kategori ekleme ve silme
- - İndirim tanımlama ve silme
- - Sipariş onaylama
- 
- Kullanıcılar
- 
- - Ürünleri sepete ekleme 
- - Ürün sipariş etme
- - Siparişlerini görüntüleme
- 
- # Projede Kullandığım Araçlar ve Teknolojiler
- 
- - Symfony 5.4
- - Twig
- - Jquery
- - MYSQL 8
- - Docker 20.10.16
- - Redis 7
- - Nginx
- - Elastich Search 7.4
- - PHP 7.4
+ * Dosya içerisindeyken terminale kodu yazıyoruz
+    ```
+    docker-compose up -d -build
+    ```
 
-# Kurulum
+ * Docker kurulumu yaptıktan sonra php docker container idsini alıyoruz
+      ```
+      docker ps
+      ``` 
+    Aldığımız idyi "phpid" yerine yazan yere yazıyoruz
+     ```
+     docker exec -it phpid bash
+     ``` 
+  
+  * Php terminalindeyken kodunu yazıp gerekli paketleri indiriyoruz.
+       ```
+       composer install
+       ``` 
+ * Kurulum tamamlandı Giriş bilgileri
+    
+      #### User Bilgileri
+       - Kullanıcı adı : musteri@gmail.com
+       - Şifre : 123456
+       - adres : http://localhost:8000/client
+        
+        
+      #### Admin Bilgileri
+       - Kullanıcı adı : admnin@gmail.com
+       - Şifre : 123456
+       - adres : http://localhost:8000/admin
+        
+      ### Giriş sayfası
+      - adres : http://localhost:8000/login
+      
+      ### Phpmyadmin ve Kibana Sayfası
+      - Phpmyadmin adres : http://localhost:8082/
+      - Kibana adres :  http://localhost:5601/app/kibana
+  
+ 
 
-Kurulum talimatları -[documentation](doc/setup.md)
+# Proje tanıtımı
+
+Kullanımı   [documentation](doc/use.md)
 
 
  
