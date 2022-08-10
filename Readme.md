@@ -28,6 +28,7 @@ Adminler
 
 # Kurulum
 
-Kurulum talimatları - [ https://google.fr ] Link Burada dır
+Kurulum talimatları -[documentation](doc/setup.md)
+
 
  
