@@ -54,7 +54,7 @@
 
 # Proje tanıtımı
 
-Kullanımı   [documentation](setup.md)
+Kullanımı   [documentation](use.md)
 
 
  
