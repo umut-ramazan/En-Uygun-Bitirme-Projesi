@@ -49,6 +49,9 @@
       ### Phpmyadmin ve Kibana Sayfası
       - Phpmyadmin adres : http://localhost:8082/
       - Kibana adres :  http://localhost:5601/app/kibana
+      
+      
+      #### Databasenin Backup Dosyası "app.sql" 'dir.
   
  
 
