@@ -280,7 +280,7 @@ class ShoppingServices
 
                                 foreach ($item->getCategories()->getValues() as $category){
 
-                                    if ( array_key_exists($category->getCategoryName() , $discountCategories )) {
+                                    if (!empty($discountCategories) && array_key_exists($category->getCategoryName() , $discountCategories )) {
                                         $discountCategory[] = $data[0]['productPrice'];
                                     }
 
