@@ -28,7 +28,7 @@ Adminler
 
 # Kurulum
 
-Kurulum talimatları -[documentation](doc/setup.md)
+Kurulum talimatları -[documentation](doc/Readme.md)
 
 
  
