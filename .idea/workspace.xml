@@ -1,26 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bb805f8b-19c4-4dc5-a68c-f1cf72b3c67b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/console" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config/bundles.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config/packages/cache.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config/packages/framework.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config/packages/prod/routing.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config/packages/routing.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config/packages/test/framework.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config/preload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config/routes.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config/routes/dev/framework.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Controller/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony_docker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony_docker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/Client/js/shoppingCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/Client/js/shoppingCart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/ClientController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/panel/productList.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/panel/productList.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_1.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_1.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/auto.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/auto.cnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000001" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000002" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/ca-key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ca-key.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/ca.pem" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ca.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/client-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/client-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/client-key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/client-key.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/mysql/general_log_212.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/mysql/slow_log_213.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/accounts_145.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/accounts_145.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/binary_log_trans_189.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/binary_log_trans_189.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/cond_instances_82.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/cond_instances_82.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/data_lock_waits_161.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/data_lock_waits_161.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/data_locks_160.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/data_locks_160.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/error_log_83.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/error_log_83.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_errors_su_139.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_errors_su_139.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_errors_su_140.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_errors_su_140.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_errors_su_141.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_errors_su_141.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_errors_su_142.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_errors_su_142.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_errors_su_143.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_errors_su_143.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_stages_cu_111.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_stages_cu_111.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_stages_hi_112.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_stages_hi_112.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_stages_hi_113.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_stages_hi_113.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_stages_su_114.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_stages_su_114.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_stages_su_115.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_stages_su_115.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_stages_su_116.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_stages_su_116.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_stages_su_117.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_stages_su_117.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_stages_su_118.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_stages_su_118.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statement_119.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_statement_119.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statement_120.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_statement_120.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statement_121.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_statement_121.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statement_122.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_statement_122.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statement_123.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_statement_123.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statement_124.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_statement_124.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statement_125.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_statement_125.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statement_126.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_statement_126.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statement_127.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_statement_127.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statement_128.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_statement_128.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statement_129.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_statement_129.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statement_130.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_statement_130.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_transacti_131.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_transacti_131.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_transacti_132.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_transacti_132.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_transacti_133.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_transacti_133.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_transacti_134.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_transacti_134.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_transacti_135.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_transacti_135.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_transacti_136.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_transacti_136.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_transacti_137.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_transacti_137.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_transacti_138.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_transacti_138.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_waits_cur_84.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_waits_cur_84.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_waits_his_85.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_waits_his_85.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_waits_his_86.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_waits_his_86.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_waits_sum_87.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_waits_sum_87.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_waits_sum_88.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_waits_sum_88.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_waits_sum_89.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_waits_sum_89.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_waits_sum_90.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_waits_sum_90.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_waits_sum_91.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_waits_sum_91.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/events_waits_sum_92.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/events_waits_sum_92.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/file_instances_93.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/file_instances_93.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/file_summary_by__94.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/file_summary_by__94.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/file_summary_by__95.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/file_summary_by__95.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/global_status_181.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/global_status_181.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/global_variables_184.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/global_variables_184.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/host_cache_96.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/host_cache_96.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/hosts_146.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/hosts_146.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/keyring_keys_152.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/keyring_keys_152.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/log_status_174.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/log_status_174.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/memory_summary_b_154.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/memory_summary_b_154.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/memory_summary_b_155.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/memory_summary_b_155.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/memory_summary_b_156.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/memory_summary_b_156.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/memory_summary_b_157.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/memory_summary_b_157.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/memory_summary_g_153.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/memory_summary_g_153.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/metadata_locks_159.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/metadata_locks_159.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/mutex_instances_97.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/mutex_instances_97.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/objects_summary__98.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/objects_summary__98.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/performance_time_99.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/performance_time_99.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/persisted_variab_187.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/persisted_variab_187.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/prepared_stateme_175.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/prepared_stateme_175.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/processlist_100.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/processlist_100.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_appl_165.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/replication_appl_165.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_appl_166.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/replication_appl_166.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_appl_167.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/replication_appl_167.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_appl_168.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/replication_appl_168.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_appl_170.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/replication_appl_170.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_appl_171.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/replication_appl_171.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_asyn_172.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/replication_asyn_172.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_asyn_173.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/replication_asyn_173.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_conn_162.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/replication_conn_162.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_conn_164.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/replication_conn_164.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_grou_163.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/replication_grou_163.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_grou_169.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/replication_grou_169.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/rwlock_instances_101.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/rwlock_instances_101.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/session_account__151.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/session_account__151.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/session_connect__150.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/session_connect__150.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/session_status_182.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/session_status_182.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/session_variable_185.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/session_variable_185.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/setup_actors_102.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/setup_actors_102.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/setup_consumers_103.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/setup_consumers_103.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/setup_instrument_104.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/setup_instrument_104.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/setup_objects_105.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/setup_objects_105.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/setup_threads_106.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/setup_threads_106.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/socket_instances_147.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/socket_instances_147.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/socket_summary_b_148.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/socket_summary_b_148.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/socket_summary_b_149.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/socket_summary_b_149.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/status_by_accoun_177.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/status_by_accoun_177.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/status_by_host_178.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/status_by_host_178.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/status_by_thread_179.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/status_by_thread_179.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/status_by_user_180.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/status_by_user_180.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/table_handles_158.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/table_handles_158.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/table_io_waits_s_107.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/table_io_waits_s_107.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/table_io_waits_s_108.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/table_io_waits_s_108.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/table_lock_waits_109.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/table_lock_waits_109.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/threads_110.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/threads_110.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/tls_channel_stat_190.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/tls_channel_stat_190.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/user_defined_fun_188.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/user_defined_fun_188.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/user_variables_b_176.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/user_variables_b_176.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/users_144.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/users_144.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/variables_by_thr_183.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/variables_by_thr_183.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/variables_info_186.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/variables_info_186.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/private_key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/private_key.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/public_key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/public_key.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/server-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/server-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/server-key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/server-key.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/symfony_docker/doctrine_migration_versions.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/symfony_docker/quote.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/sys/sys_config.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/sys/sys_config.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/php/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +162,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/app" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -102,6 +234,91 @@
       <path value="$PROJECT_DIR$/app/vendor/symfony/cache" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-php73" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/app/vendor/predis/predis" />
+      <path value="$PROJECT_DIR$/app/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/app/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/app/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/app/vendor/queue-interop/queue-interop" />
+      <path value="$PROJECT_DIR$/app/vendor/queue-interop/amqp-interop" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/app/vendor/enqueue/null" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/messenger" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/app/vendor/enqueue/dsn" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/app/vendor/enqueue/enqueue" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/notifier" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/amqp-messenger" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/doctrine-messenger" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/redis-messenger" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/password-hasher" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/runtime" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/app/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/app/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/app/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/app/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/app/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/app/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/app/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/app/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/app/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/app/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/app/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/app/vendor/phar-io/version" />
     </include_path>
   </component>
   <component name="ProjectId" id="1rBbwD3pcoQEzxpQerTPwjmcPVO" />
@@ -110,12 +327,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Pc/Desktop/Enuygun",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -128,10 +352,23 @@
       <workItem from="1618481306473" duration="380000" />
       <workItem from="1618503419210" duration="22000" />
       <workItem from="1618508542213" duration="284000" />
+      <workItem from="1659972255501" duration="384000" />
+      <workItem from="1659974212177" duration="11000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
