@@ -90,6 +90,25 @@ class CategoryRepository extends ServiceEntityRepository
             ->getQuery()->getResult();
     }
 
+    /**
+     * @return array
+     */
+    public function findDiscount(): array
+    {
+        $data = array();
+        $discounts =  $this->createQueryBuilder('c')
+            ->where('c.discount = :value')
+            ->setParameter(':value', 1)
+            ->select('c.categoryName')
+            ->getQuery()->getResult();
+
+        foreach ($discounts as $discount){
+           $data[$discount['categoryName']]=1;
+        }
+        return $data;
+
+    }
+
 
 
 //    public function findOneBySomeField($value): ?Category

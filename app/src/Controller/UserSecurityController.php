@@ -16,14 +16,7 @@ class UserSecurityController extends AbstractController
     public function login(AuthenticationUtils $authenticationUtils): Response
     {
          if ($this->getUser()) {
-
-             if ($this->getUser()->getRoles() == 'ROLE_ADMIN') {
-                 return $this->redirectToRoute('app_panel');
-             }
-             else{
-                 return $this->redirectToRoute('app_client');
-             }
-
+             return $this->redirectToRoute('app_client');
          }
 
         // get the login error if there is one

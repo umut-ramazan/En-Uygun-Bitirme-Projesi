@@ -254,7 +254,8 @@ class ShoppingServices
 
                     $discount = [];
                     $discountCategory = [];
-                    $discountCategories = $this->categoryRepository->findOneBy(['discount' => 1]);
+                    $discountCategories = $this->categoryRepository->findDiscount();
+
 
                     foreach ($shoppingCart as $data) {
                         $summers = $session->get('shoppingCartSummery');
@@ -269,15 +270,22 @@ class ShoppingServices
                         if (count($shoppingCart) == 2) {
                             $discount[] = $data[0]['productPrice'];
                         }
+
                         /** Check out  3 pay 1 camping product*/
                         if (count($shoppingCart) == 3) {
 
                             $productByCategory = $this->productRepository->findProductByCategories($data[0]['id']);
 
                             foreach ($productByCategory as $item) {
-                                if (!empty($discountCategories) && array_key_exists($discountCategories->getDiscount(), $item->getCategories()->getValues())) {
-                                    $discountCategory[] = $data[0]['productPrice'];
+
+                                foreach ($item->getCategories()->getValues() as $category){
+
+                                    if ( array_key_exists($category->getCategoryName() , $discountCategories )) {
+                                        $discountCategory[] = $data[0]['productPrice'];
+                                    }
+
                                 }
+
                             }
 
                         }
@@ -289,7 +297,8 @@ class ShoppingServices
                     }
 
                     if ($discountCategory) {
-                        echo $summers['totalPrice'] = max($discountCategory);
+
+                       $summers['totalPrice'] = max($discountCategory);
                     }
 
                     $shopping
@@ -317,7 +326,6 @@ class ShoppingServices
                 }
 
             }
-
 
             return false;
         }
