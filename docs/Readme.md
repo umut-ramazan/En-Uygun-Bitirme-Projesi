@@ -9,7 +9,7 @@
 
  * Dosya içerisindeyken terminale kodu yazıyoruz
     ```
-    docker-compose up -d -build
+    docker-compose up -d --build
     ```
 
  * Docker kurulumu yaptıktan sonra php docker container idsini alıyoruz
