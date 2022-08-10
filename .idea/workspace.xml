@@ -7,19 +7,104 @@
     <list default="true" id="bb805f8b-19c4-4dc5-a68c-f1cf72b3c67b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/symfony_docker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony_docker.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/Client/js/shoppingCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/Client/js/shoppingCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Controller/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/panel/productList.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/panel/productList.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/_state/global-22.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/_state/manifest-64.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/_state/node-3.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/Rbhs255ISVaG1NGixPKTxQ/0/_state/retention-leases-5.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/Rbhs255ISVaG1NGixPKTxQ/0/_state/state-3.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/Rbhs255ISVaG1NGixPKTxQ/0/index/_0.cfe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/Rbhs255ISVaG1NGixPKTxQ/0/index/_0.cfs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/Rbhs255ISVaG1NGixPKTxQ/0/index/_0.si" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/Rbhs255ISVaG1NGixPKTxQ/0/index/segments_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/Rbhs255ISVaG1NGixPKTxQ/0/index/write.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/Rbhs255ISVaG1NGixPKTxQ/0/translog/translog-3.ckp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/Rbhs255ISVaG1NGixPKTxQ/0/translog/translog-3.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/Rbhs255ISVaG1NGixPKTxQ/0/translog/translog-4.ckp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/Rbhs255ISVaG1NGixPKTxQ/0/translog/translog-4.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/Rbhs255ISVaG1NGixPKTxQ/0/translog/translog-5.ckp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/Rbhs255ISVaG1NGixPKTxQ/0/translog/translog-5.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/Rbhs255ISVaG1NGixPKTxQ/0/translog/translog-6.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/Rbhs255ISVaG1NGixPKTxQ/0/translog/translog.ckp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/Rbhs255ISVaG1NGixPKTxQ/_state/state-10.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/_state/retention-leases-6.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/_state/state-3.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/index/_0.cfe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/index/_0.cfs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/index/_0.si" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/index/_1.cfe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/index/_1.cfs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/index/_1.si" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/index/_4.cfe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/index/_4.cfs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/index/_4.si" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/index/_5.cfe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/index/_5.cfs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/index/_5.si" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/index/segments_7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/index/write.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/translog/translog-6.ckp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/translog/translog-6.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/translog/translog-7.ckp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/translog/translog-7.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/translog/translog-8.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/0/translog/translog.ckp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/fsJx5TWIQguFvJVsYES2IQ/_state/state-14.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/pF6BEpYCQUO6irKYj7ZxkQ/0/_state/retention-leases-4.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/pF6BEpYCQUO6irKYj7ZxkQ/0/_state/state-3.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/pF6BEpYCQUO6irKYj7ZxkQ/0/index/_3.cfe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/pF6BEpYCQUO6irKYj7ZxkQ/0/index/_3.cfs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/pF6BEpYCQUO6irKYj7ZxkQ/0/index/_3.si" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/pF6BEpYCQUO6irKYj7ZxkQ/0/index/_5.cfe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/pF6BEpYCQUO6irKYj7ZxkQ/0/index/_5.cfs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/pF6BEpYCQUO6irKYj7ZxkQ/0/index/_5.si" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/pF6BEpYCQUO6irKYj7ZxkQ/0/index/segments_5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/pF6BEpYCQUO6irKYj7ZxkQ/0/index/write.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/pF6BEpYCQUO6irKYj7ZxkQ/0/translog/translog-5.ckp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/pF6BEpYCQUO6irKYj7ZxkQ/0/translog/translog-5.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/pF6BEpYCQUO6irKYj7ZxkQ/0/translog/translog-6.ckp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/pF6BEpYCQUO6irKYj7ZxkQ/0/translog/translog-6.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/pF6BEpYCQUO6irKYj7ZxkQ/0/translog/translog-7.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/pF6BEpYCQUO6irKYj7ZxkQ/0/translog/translog.ckp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/pF6BEpYCQUO6irKYj7ZxkQ/_state/state-12.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/qL8f1gQXQdyocHibQJlu-w/0/_state/retention-leases-4.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/qL8f1gQXQdyocHibQJlu-w/0/_state/state-3.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/qL8f1gQXQdyocHibQJlu-w/0/index/segments_3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/qL8f1gQXQdyocHibQJlu-w/0/index/write.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/qL8f1gQXQdyocHibQJlu-w/0/translog/translog-2.ckp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/qL8f1gQXQdyocHibQJlu-w/0/translog/translog-2.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/qL8f1gQXQdyocHibQJlu-w/0/translog/translog-3.ckp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/qL8f1gQXQdyocHibQJlu-w/0/translog/translog-3.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/qL8f1gQXQdyocHibQJlu-w/0/translog/translog-4.ckp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/qL8f1gQXQdyocHibQJlu-w/0/translog/translog-4.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/qL8f1gQXQdyocHibQJlu-w/0/translog/translog-5.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/qL8f1gQXQdyocHibQJlu-w/0/translog/translog.ckp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data/nodes/0/indices/qL8f1gQXQdyocHibQJlu-w/_state/state-10.st" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_1.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_1.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/app/category.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/app/category.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/app/category_product.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/app/category_product.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/app/doctrine_migration_versions.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/app/doctrine_migration_versions.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/app/messenger_messages.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/app/messenger_messages.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/app/orders.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/app/orders.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/app/product.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/app/product.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/app/shopping_cart.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/app/shopping_cart.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/app/user.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/app/user.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/auto.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/auto.cnf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/binlog.000001" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/binlog.000002" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000003" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000004" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000005" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ca-key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ca-key.pem" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ca.pem" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ca.pem" afterDir="false" />
@@ -28,9 +113,10 @@
       <change beforePath="$PROJECT_DIR$/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_buffer_pool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibtmp1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/mysql/general_log_212.sdi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/mysql/slow_log_213.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/mysql/general_log_213.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql/general_log_213.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/mysql/slow_log_214.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql/slow_log_214.sdi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/performance_schema/accounts_145.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/accounts_145.sdi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/performance_schema/binary_log_trans_189.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/binary_log_trans_189.sdi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/performance_schema/cond_instances_82.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/cond_instances_82.sdi" afterDir="false" />
@@ -86,6 +172,7 @@
       <change beforePath="$PROJECT_DIR$/mysql/performance_schema/global_variables_184.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/global_variables_184.sdi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/performance_schema/host_cache_96.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/host_cache_96.sdi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/performance_schema/hosts_146.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/hosts_146.sdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/performance_schema/keyring_componen_191.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/keyring_componen_191.sdi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/performance_schema/keyring_keys_152.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/keyring_keys_152.sdi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/performance_schema/log_status_174.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/log_status_174.sdi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/performance_schema/memory_summary_b_154.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/performance_schema/memory_summary_b_154.sdi" afterDir="false" />
@@ -144,12 +231,9 @@
       <change beforePath="$PROJECT_DIR$/mysql/public_key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/public_key.pem" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/server-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/server-cert.pem" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/server-key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/server-key.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/symfony_docker/doctrine_migration_versions.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/symfony_docker/quote.ibd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/sys/sys_config.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/sys/sys_config.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_002" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/php/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +245,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/app" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -319,6 +403,14 @@
       <path value="$PROJECT_DIR$/app/vendor/phpunit/phpunit" />
       <path value="$PROJECT_DIR$/app/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/app/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/app/vendor/pagerfanta/pagerfanta" />
+      <path value="$PROJECT_DIR$/app/vendor/friendsofsymfony/elastica-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/elasticsearch/elasticsearch" />
+      <path value="$PROJECT_DIR$/app/vendor/ezimuel/guzzlestreams" />
+      <path value="$PROJECT_DIR$/app/vendor/ezimuel/ringphp" />
+      <path value="$PROJECT_DIR$/app/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/app/vendor/nyholm/dsn" />
+      <path value="$PROJECT_DIR$/app/vendor/ruflin/elastica" />
     </include_path>
   </component>
   <component name="ProjectId" id="1rBbwD3pcoQEzxpQerTPwjmcPVO" />
@@ -332,7 +424,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Pc/Desktop/Enuygun",
+    "last_opened_file_path": "C:/Users/Pc/Desktop/git hub test/docker-en-uygun",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -354,6 +446,7 @@
       <workItem from="1618508542213" duration="284000" />
       <workItem from="1659972255501" duration="384000" />
       <workItem from="1659974212177" duration="11000" />
+      <workItem from="1660153571301" duration="844000" />
     </task>
     <servers />
   </component>

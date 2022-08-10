@@ -30,7 +30,7 @@
                 </thead>
 
                 {% for order in Orders  %}
-
+                {% if order.status != 'confirm' %}
                 <tbody>
                 <tr>
 
@@ -48,6 +48,7 @@
                     <th class="text-center">{{ order.createdAt|date("F jS \\a\\t g:ia") }}</th>
 
                 </tr>
+                {% endif %}
                 {% endfor %}
 
                 </tbody>
@@ -75,7 +76,7 @@
 
                 {% for order in Orders  %}
 
-                {% if order.status != 'process' %}
+                {% if order.status != 'process' and order.status == 'confirm' %}
 
                 <tbody>
                 <tr>

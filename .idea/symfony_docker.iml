@@ -157,6 +157,14 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpunit/phpunit" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phar-io/manifest" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/pagerfanta/pagerfanta" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/friendsofsymfony/elastica-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/elasticsearch/elasticsearch" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/ezimuel/guzzlestreams" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/ezimuel/ringphp" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/react/promise" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/nyholm/dsn" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/ruflin/elastica" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

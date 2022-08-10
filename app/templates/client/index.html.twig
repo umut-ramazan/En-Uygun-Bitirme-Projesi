@@ -21,7 +21,7 @@
                 {% if product.productPiece > 0 and product.productPrice > 0 and product.categories.values is not empty %}
                     <div class="col-sm-6 col-md-3">
                         <div class="thumbnail">
-                            <img src="{{ asset('uploads/img/') }}{{ product.imgPath }}"  alt="">
+                            <img src="{{ asset('uploads/img/') }}{{ product.imgPath }}"   alt="">
                             <div class="caption">
                                 <p class="text-center "><strong>Ürün Adı: </strong> {{ product.productName }}</p>
                                 <p class="text-center"><strong>Özelikleri  </strong>{{ product.productContent|raw }}</p>
