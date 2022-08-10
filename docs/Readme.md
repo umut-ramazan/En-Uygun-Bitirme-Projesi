@@ -16,7 +16,9 @@
       ```
       docker ps
       ``` 
-    Aldığımız idyi "phpid" yerine yazan yere yazıyoruz
+      ![Docker Ps](https://user-images.githubusercontent.com/68502979/183945206-255f0783-3b4d-4924-84ec-ee7b331ae955.png)
+  
+   Aldığımız idyi "phpid" yerine yazan yere yazıyoruz
      ```
      docker exec -it phpid bash
      ``` 
@@ -25,6 +27,9 @@
        ```
        composer install
        ``` 
+     ![composer instal](https://user-images.githubusercontent.com/68502979/183945777-3479a751-0a3f-404c-81d1-2eaa09ed2011.png)
+     
+     
  * Kurulum tamamlandı Giriş bilgileri
     
       #### User Bilgileri
@@ -49,7 +54,7 @@
 
 # Proje tanıtımı
 
-Kullanımı   [documentation](doc/use.md)
+Kullanımı   [documentation](setup.md)
 
 
  
