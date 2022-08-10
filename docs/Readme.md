@@ -39,7 +39,7 @@
         
         
       #### Admin Bilgileri
-       - Kullanıcı adı : admnin@gmail.com
+       - Kullanıcı adı : admin@gmail.com
        - Şifre : 123456
        - adres : http://localhost:8000/admin
         
