@@ -292,11 +292,12 @@ class ShoppingServices
 
                     }
 
-                    if ($discount) {
+                   
+                    if (count($discount) === 2) {
                         $summers['totalPrice'] = $summers['totalPrice'] - min($discount) / 2;
                     }
 
-                    if ($discountCategory) {
+                    if (count($discountCategory) == 3) {
 
                        $summers['totalPrice'] = max($discountCategory);
                     }
