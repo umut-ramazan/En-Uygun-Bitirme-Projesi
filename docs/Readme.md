@@ -5,7 +5,7 @@
     ```
     git clone https://github.com/umut-ramazan/En-Uygun-Bitirme-Projesi
     ```
-  
+  ### <b>NOT</b> Eğer Sistemi linux veya mac üzerinde kuracaksanız. mysql dosyasını silip. öyle 2. Maddeyi yapınız phpmyadmin üzerinden apd adlı database'ye app.sql         dosyasını import ediniz.
 
  * Dosya içerisindeyken terminale kodu yazıyoruz
     ```
@@ -49,6 +49,8 @@
       ### Phpmyadmin ve Kibana Sayfası
       - Phpmyadmin adres : http://localhost:8082/
       - Kibana adres :  http://localhost:5601/app/kibana
+      
+ 
       
       
       #### Databasenin Backup Dosyası "app.sql" 'dir.
