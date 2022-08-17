@@ -5,7 +5,7 @@
     ```
     git clone https://github.com/umut-ramazan/En-Uygun-Bitirme-Projesi
     ```
-  ### <b>NOT</b> Eğer Sistemi linux veya mac üzerinde kuracaksanız. mysql dosyasını silip. öyle 2. Maddeyi yapınız phpmyadmin üzerinden apd adlı database'ye app.sql         dosyasını import ediniz.
+  ### <b>NOT</b> Eğer Sistemi linux veya mac üzerinde kuracaksanız. mysql dosyasını silip. öyle 2. Maddeyi yapınız phpmyadmin üzerinden app adlı database'ye app.sql         dosyasını import ediniz.
 
  * Dosya içerisindeyken terminale kodu yazıyoruz
     ```
